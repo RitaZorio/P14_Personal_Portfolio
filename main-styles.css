@@ -1,0 +1,45 @@
+
+/*purpura (letras) #523857
+violeta claro (fondo) #F9EBF9
+morado (letras y lineas etc) #82071B*/
+html {
+margin:0;
+background-color:#F9EBF9;
+font-size: 16px;
+font-family: 'Barlow', Sans-serif;
+}
+
+h1,h2,p{
+    color:#82071B;
+}
+
+h1{
+    font-size: 3.5rem;
+}
+
+nav{
+   border-bottom: 2px, solid #82071B;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+}
+
+nav li{
+    display: inline;
+    list-style: none;
+    color:#F9EBF9;
+}
+
+#nav{
+    font-size: 2.5rem
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+#theme{
+    display:inline;
+    position: absolute;
+    right:0;
+}
