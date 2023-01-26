@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rita Zorio contact info</title>
 </head>
 
 <header>
@@ -23,14 +23,28 @@
 <body>
     <h1>Contact</h1>
     <div class="container">
-        <p>Please fill out this contact form</p>
-        <form>
+        <div class="img-container">
+            <a href="https://github.com/RitaZorio" target="_blank"><img src="Resources\github-black.png" alt="GitHub logo"/></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="Resources\instagram.png" alt="Instagram logo"/></a>
+            <a href="https://www.linkedin.com/in/rrzorio/" target="_blank"><img src="Resources\logotipo-black.png" alt="LinkedIn logo"/></a>
+        </div>
+    </div>
+    <div class="container">
+        <p>I would love to hear from you!</p>
+        <form action="form-response.html" method="POST">
             <label for="name ">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input class="input-text" type="text" id="name" name="name" required>
             <br>
             <label for="email">E-mail:</label>
-            <input type="text" id="email" name="email" required 
-
+            <input class="input-text" type="text" id="email" name="email" required>
+            <br>
+            <label for="comment">Enter your message below:</label>
+            <br>
+            <div class="textarea">
+            <textarea id="comment" name="comment" rows="4" cols="40"></textarea>
+            </div>
+            <br>
+            <input type="submit" value="Send">
         </form>
 
     </div>
