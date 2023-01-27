@@ -221,7 +221,7 @@ nav ul{
 /* ---------------------------------------------------- */
  /* Tech skills section */
  #skills-logo img{
-    max-width: 15%;
+    max-width: 10%;
     height:auto;
  }
 
@@ -231,3 +231,30 @@ nav ul{
     flex-direction: row;
     justify-content: space-around;
  }
+/* ------------------------------------------------------- */
+/* Life skills section*/
+
+.list-container li{
+    color:#82071B;
+    list-style: circle;
+}
+.list-container{
+    padding-bottom: 2rem;
+}
+
+/* ------------------------------------------------------- */
+/* footer section */
+.footer{
+    border-top: 2px solid;
+   border-image: linear-gradient(to right,#F9EBF9, #F9EBF9,#82071B,#F9EBF9,#F9EBF9) 1;
+   display: flex;
+   justify-content: center;
+   height: fit-content;
+}
+
+footer p {
+    color:#82071B;
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    
+}
