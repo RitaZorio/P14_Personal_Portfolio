@@ -4,38 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact-styles.css"/>
     <title>Rita Zorio contact info</title>
 </head>
 
 <header>
     <nav>
-        <ul role="presentation">
-            <li><a href="index.html#about-me">About Me</a></li>
-            <li><a href="index.html#projects">Projects</a></li>
-            <li><a href="index.html#skills">Skills</a></li>
-        </ul>
-        <div id="theme">
-            <p class="light">Light theme</p>
-            <p class="dark">Dark theme</p>
-        <!--Switch for changing between dark and light theme-->    
-            <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-            </label>
+        <div id="nav">
+            <ul role="presentation">
+                <li><a id="first-a" href="index.html#about-me">About Me</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="form.html">Contact</a></li>
+            </ul>
+                <span id="theme">
+                    <p id="light">Light theme</p>
+                    <p id="dark">Dark theme</p>
+            <!--Switch for changing between dark and light theme-->    
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                 </span>  
         </div>
-</nav>
+    </nav>
 </header>
 <body>
-    <h1>Contact</h1>
+    <h2>Contact</h2>
     <div class="container">
+        <p>You can find me here:</p>
         <div class="img-container">
-            <a href="https://github.com/RitaZorio" target="_blank"><img src="Resources\github-black.png" alt="GitHub logo"/></a>
             <a href="https://www.instagram.com/" target="_blank"><img src="Resources\instagram-claro.png" alt="Instagram logo"/></a>
             <a href="https://www.linkedin.com/in/rrzorio/" target="_blank"><img src="Resources\linkedin.png" alt="LinkedIn logo"/></a>
         </div>
     </div>
     <div class="container">
-        <p>I would love to hear from you!</p>
+        <p>Or you can write me, I would love to hear from you!</p>
         <form action="form-response.html" method="POST">
             <label for="name ">Name:</label>
             <input class="input-text" type="text" id="name" name="name" required>
@@ -49,7 +53,7 @@
             <textarea id="comment" name="comment" rows="4" cols="40"></textarea>
             </div>
             <br>
-            <input type="submit" value="Send">
+            <input class="button" type="submit" value="Send">
         </form>
 
     </div>
@@ -57,6 +61,8 @@
     
 </body>
 <footer>
+    <div class="footer">
     <p>Rita Zorio, 2023</p>
+    </div>
 </footer>    
 </html>
