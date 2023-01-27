@@ -25,8 +25,8 @@ main{
     flex-wrap:wrap;
 }
 h1{
-    font-size: 3.5rem;
-    
+    font-size: 2rem;
+   padding-left: 85px;
 }
 
 
@@ -70,7 +70,7 @@ nav ul{
 #light{
     display:none ;
 }
-
+/* ----------------------------------------------------------------------------------- */
 /* Making a toggle Switch */
 .switch {
     position: relative;
@@ -132,4 +132,32 @@ nav ul{
   
   .slider.round:before {
     border-radius: 50%;
+  }
+  /* ----------------------------------------------------------------- */
+  /*About me section */
+  .text-container{
+    text-align: justify;
+    padding-left: 20px;
+   
+  }
+
+  .container-about-me{
+    display: flex;
+    flex-direction:row-reverse;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  #portrait{
+    min-height:200px;
+    max-height: 500px;
+    width: auto;
+    border-radius: 20%;
+    flex-shrink: 1;
+  }
+
+  .note{
+    font-style: italic;
+    padding-top: 30px;
+    font-weight: lighter;
   }
