@@ -1,0 +1,68 @@
+
+/*purpura (letras) #523857
+violeta claro (fondo) #F9EBF9
+morado (letras y lineas etc) #82071B*/
+
+/*MAIN STYLES*/
+html {
+  margin:0;
+  background-color:#F9EBF9;
+  font-size: 16px;
+  font-family: 'Barlow', Sans-serif;
+  height: 100%;
+
+  }
+  body{
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0px 25px 0px 25px;
+      height: 100%;
+  }
+  
+  h1,h2,p{
+      color:#82071B;
+  }
+  
+  main{
+      display:flex;
+      flex-direction: row;
+      flex-wrap:wrap;
+  }
+  h1{
+      font-size: 2.6rem;
+     padding-left: 85px;
+  }
+  
+  h2{
+      font-size: 2rem;
+  }
+
+  /* ----------------------------------------- */
+  /* BODY */
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    
+  }
+  #go-back{
+    color:#82071B;
+  }
+  /* ------------------------------------------------------- */
+  /* footer section */
+  .footer{
+      border-top: 2px solid;
+     border-image: linear-gradient(to right,#F9EBF9, #F9EBF9,#82071B,#F9EBF9,#F9EBF9) 1;
+     display: flex;
+     justify-content: center;
+     height: fit-content;
+  }
+  
+  footer p {
+      color:#82071B;
+      font-size: 0.8rem;
+      line-height: 0.8rem;
+      
+  }
