@@ -5,256 +5,258 @@ morado (letras y lineas etc) #82071B*/
 
 /*MAIN STYLES*/
 html {
-margin:0;
-background-color:#F9EBF9;
-font-size: 16px;
-font-family: 'Barlow', Sans-serif;
-}
-body{
-    max-width: 1080px;
-    margin: 0 auto;
-}
-
-h1,h2,p{
-    color:#82071B;
-}
-
-main{
-    display:flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-}
-h1{
-    font-size: 2.6rem;
-   padding-left: 85px;
-}
-
-h2{
-    font-size: 2rem;
+  margin:0;
+  background-color:#F9EBF9;
+  font-size: 16px;
+  font-family: 'Barlow', Sans-serif;
+  }
+  body{
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0px 25px 0px 25px;
+  }
+  
+  h1,h2,p{
+      color:#82071B;
+  }
+  
+  main{
+      display:flex;
+      flex-direction: row;
+      flex-wrap:wrap;
+  }
+  h1{
+      font-size: 2.6rem;
+     padding-left: 85px;
+  }
+  
+  h2{
+      font-size: 2rem;
+      
+  
+  }
+  /* -------------------------------------------------- */
+  /*NAVIGATION BAR*/
+  nav{
+     border-bottom: 2px solid;
+      border-image: linear-gradient(to right,#F9EBF9, #F9EBF9,#82071B,#F9EBF9,#F9EBF9) 1;
+  }
+  nav li{
+      display: inline;
+      list-style: none;
+      font-size: 2rem;
+      
+  }
+  nav li a{
+      text-decoration: none;
+      padding-left: 20px;
+      color:#82071B;
+      font-size: 1.5rem;
+  }
+  
+  
+  nav ul{
+      padding-left: -30px;
+  }
+  #nav{
+      display: flex;
+      flex-direction: row;
+      font-weight: bold;
+      justify-content: center;
+  }
+  #theme{
+      position: absolute;
+      right:300px;
+      top: 30px;
+      font-weight: lighter;
+  }
+  #dark{
+      display:inline;
+  }
+  #light{
+      display:none ;
+  }
+  /* ----------------------------------------------------------------------------------- */
+  /* Making a toggle Switch */
+  .switch {
+      position: relative;
+      display: inline-block;
+      width: 30px;
+      height: 16px;
+    }
     
-
-}
-/* -------------------------------------------------- */
-/*NAVIGATION BAR*/
-nav{
-   border-bottom: 2px solid;
-    border-image: linear-gradient(to right,#F9EBF9, #F9EBF9,#82071B,#F9EBF9,#F9EBF9) 1;
-}
-nav li{
-    display: inline;
-    list-style: none;
-    font-size: 2rem;
+    /* Hide default HTML checkbox */
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
     
-}
-nav li a{
-    text-decoration: none;
-    padding-left: 20px;
-    color:#82071B;
-    font-size: 1.5rem;
-}
-
-
-nav ul{
-    padding-left: -30px;
-}
-#nav{
-    display: flex;
-    flex-direction: row;
-    font-weight: bold;
-    justify-content: center;
-}
-#theme{
-    position: absolute;
-    right:300px;
-    top: 30px;
-    font-weight: lighter;
-}
-#dark{
-    display:inline;
-}
-#light{
-    display:none ;
-}
-/* ----------------------------------------------------------------------------------- */
-/* Making a toggle Switch */
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 30px;
-    height: 16px;
-  }
-  
-  /* Hide default HTML checkbox */
-  .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  /* The slider */
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 14px;
-    width: 14px;
-    left: 2px;
-    bottom: 2px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  input:checked + .slider {
-    background-color:#82071B;
-  }
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px #82071B;
-  }
-  
-  input:checked + .slider:before {
-    -webkit-transform: translateX(13px);
-    -ms-transform: translateX(13px);
-    transform: translateX(13px);
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
-    border-radius: 34px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  }
-  /* ----------------------------------------------------------------- */
-  /*About me section */
-  .text-container{
-    text-align: justify;
-    padding-left: 20px;
-   
-  }
-
-  .container-about-me{
-    display: flex;
-    flex-direction:row-reverse;
-    flex-wrap: nowrap;
-    align-items: center;
-  }
-
-  #portrait{
-    min-width: 300px;
-    width: 100%;
-    height: auto;
-    border-radius: 20%;
-    flex-shrink: 1;
-  }
-
-  .note{
-    font-style: italic;
-    padding-top: 30px;
-    font-weight: lighter;
-  }
-/* ------------------------------------------------------- */
-  /* Projects section */
-  details{
-    padding: .5em 0 0.5rem 0;
-  }
-  details summary { 
-    cursor: pointer;
-  }
-  
-  details summary > * {
-    display: inline;
-    color: #82071B;
-    padding-left: 8px;
-  }
-
-  summary::marker{
-    color:#82071B;
-    content: "→";
+    /* The slider */
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
     
-  }
-
-  details > p{
-    padding-left: 10%;
-  }
-
-  .container-projects{
-    width:100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-  }
-
-  #dog-pc{
-    width: 50%;
-    height: auto;
-    border-radius: 20%;
-    padding-top: 1rem;
-  }
-
-  .projects{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .projects > p{
-    padding-left: 2rem;
-  }
-
-  a{
-    color: #82071B;
- }
-/* ---------------------------------------------------- */
- /* Tech skills section */
- #skills-logo img{
-    max-width: 10%;
-    height:auto;
- }
-
- .img-container{
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-around;
- }
-/* ------------------------------------------------------- */
-/* Life skills section*/
-
-.list-container li{
-    color:#82071B;
-    list-style: circle;
-}
-.list-container{
-    padding-bottom: 2rem;
-}
-
-/* ------------------------------------------------------- */
-/* footer section */
-.footer{
-    border-top: 2px solid;
-   border-image: linear-gradient(to right,#F9EBF9, #F9EBF9,#82071B,#F9EBF9,#F9EBF9) 1;
-   display: flex;
-   justify-content: center;
-   height: fit-content;
-}
-
-footer p {
-    color:#82071B;
-    font-size: 0.8rem;
-    line-height: 0.8rem;
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 14px;
+      width: 14px;
+      left: 2px;
+      bottom: 2px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
     
-}
+    input:checked + .slider {
+      background-color:#82071B;
+    }
+    
+    input:focus + .slider {
+      box-shadow: 0 0 1px #82071B;
+    }
+    
+    input:checked + .slider:before {
+      -webkit-transform: translateX(13px);
+      -ms-transform: translateX(13px);
+      transform: translateX(13px);
+    }
+    
+    /* Rounded sliders */
+    .slider.round {
+      border-radius: 34px;
+    }
+    
+    .slider.round:before {
+      border-radius: 50%;
+    }
+    /* ----------------------------------------------------------------- */
+    /*About me section */
+    .text-container{
+      text-align: justify;
+      padding-left: 20px;
+      max-width: 500px;
+     
+    }
+  
+    .container-about-me{
+      display: flex;
+      flex-direction:row-reverse;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    #portrait{
+      min-width: 200px;
+      max-width: 400px;
+      height: auto;
+      border-radius: 20%;
+    }
+  
+    .note{
+      font-style: italic;
+      padding-top: 30px;
+      font-weight: lighter;
+    }
+  /* ------------------------------------------------------- */
+    /* Projects section */
+    details{
+      margin: 16px 0 16px 0;
+    }
+    details summary { 
+      cursor: pointer;
+    }
+    
+    details summary > * {
+      display: inline;
+      color: #82071B;
+      padding-left: 8px;
+    }
+  
+    summary::marker{
+      color:#82071B;
+      content: "→";
+      
+    }
+  
+    details > p{
+      padding-left: 10%;
+    }
+  
+    .container-projects{
+      width:100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+  
+    #dog-pc{
+      width: 50%;
+      height: auto;
+      border-radius: 20%;
+      padding-top: 1rem;
+    }
+  
+    .projects{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .projects > p{
+      padding-left: 2rem;
+    }
+  
+    a{
+      color: #82071B;
+   }
+  /* ---------------------------------------------------- */
+   /* Tech skills section */
+   #skills-logo img{
+      max-width: 10%;
+      height:auto;
+   }
+  
+   .img-container{
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-content: space-around;
+   }
+  /* ------------------------------------------------------- */
+  /* Life skills section*/
+  
+  .list-container li{
+      color:#82071B;
+      list-style: circle;
+  }
+  .list-container{
+      padding-bottom: 2rem;
+  }
+  
+  /* ------------------------------------------------------- */
+  /* footer section */
+  .footer{
+      border-top: 2px solid;
+     border-image: linear-gradient(to right,#F9EBF9, #F9EBF9,#82071B,#F9EBF9,#F9EBF9) 1;
+     display: flex;
+     justify-content: center;
+     height: fit-content;
+  }
+  
+  footer p {
+      color:#82071B;
+      font-size: 0.8rem;
+      line-height: 0.8rem;
+      
+  }
