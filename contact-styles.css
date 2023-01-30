@@ -199,3 +199,11 @@ grid-column: right;
  .button{
   margin-left: 20px;
 } 
+
+input, textarea{
+  border: solid 1px #82071B;
+}
+
+.button{
+  color:#82071B;
+}
