@@ -17,48 +17,50 @@
                 <li><a href="index.html#skills">Skills</a></li>
                     <li><a href="form.html">Contact</a></li>
             </ul>
-                <span id="theme">
-                    <p id="light">Light theme</p>
-                    <p id="dark">Dark theme</p>
-            <!--Switch for changing between dark and light theme-->    
-                    <label class="switch">
-                        <input type="checkbox">
-                        <span class="slider round"></span>
-                    </label>
-                 </span>  
+            <span id="theme">
+                <p id="light">Light theme</p>
+                <p id="dark">Dark theme</p>
+        <!--Switch for changing between dark and light theme-->    
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+             </span>  
         </div>
     </nav>
 </header>
 <body>
+    <main>
     <h2>Contact</h2>
     <div class="container">
-        <p>You can find me here:</p>
-        <div class="img-container">
-            <a href="https://www.instagram.com/" target="_blank"><img src="Resources\instagram-claro.png" alt="Instagram logo"/></a>
-            <a href="https://www.linkedin.com/in/rrzorio/" target="_blank"><img src="Resources\linkedin.png" alt="LinkedIn logo"/></a>
+        <div id="left">
+            <p>You can find me here:</p>
+            <div class="img-container">
+                <a href="https://www.instagram.com/" target="_blank"><img class="logo" src="Resources\instagram-claro.png" alt="Instagram logo"/></a>
+                <a href="https://www.linkedin.com/in/rrzorio/" target="_blank"><img class="logo" src="Resources\linkedin.png" alt="LinkedIn logo"/></a>
+             </div>
+        </div>
+        <div id="right">
+             <p>Or you can write me, I would love to hear from you!</p>
+            <form action="form-response.html" method="POST">
+                <label for="name ">Name:</label>
+                <input class="input-text" type="text" id="name" name="name" required>
+                <br>
+                <label for="email">E-mail:</label>
+                <input class="input-text" type="text" id="email" name="email" required>
+                <br>
+                <label for="comment">Enter your message below:</label>
+                <br>
+                <div class="textarea">
+                <textarea id="comment" name="comment" rows="10" cols="50"></textarea>
+                </div>
+                <br>
+                <input class="button" type="submit" value="Send">
+            </form>
         </div>
     </div>
-    <div class="container">
-        <p>Or you can write me, I would love to hear from you!</p>
-        <form action="form-response.html" method="POST">
-            <label for="name ">Name:</label>
-            <input class="input-text" type="text" id="name" name="name" required>
-            <br>
-            <label for="email">E-mail:</label>
-            <input class="input-text" type="text" id="email" name="email" required>
-            <br>
-            <label for="comment">Enter your message below:</label>
-            <br>
-            <div class="textarea">
-            <textarea id="comment" name="comment" rows="4" cols="40"></textarea>
-            </div>
-            <br>
-            <input class="button" type="submit" value="Send">
-        </form>
 
-    </div>
-
-    
+</main>    
 </body>
 <footer>
     <div class="footer">
