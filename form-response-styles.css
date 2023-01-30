@@ -18,7 +18,9 @@ html {
       padding: 0px 25px 0px 25px;
       height: 100%;
   }
-  
+  /* body height 100% so it expands all the height of the page */
+
+
   h1,h2,p{
       color:#82071B;
   }
@@ -45,15 +47,27 @@ html {
     justify-content: center;
     text-align: center;
     height: 100%;
+    z-index: 2;
+  }
+
+  .box{
+    background-color: #82071B;
+    opacity: 10%;
+    height: 300px;
+    width: 50%;
+    align-self: center;
+    position: relative;
+    z-index: 1;
     
   }
+
   #go-back{
     color:#82071B;
   }
   /* ------------------------------------------------------- */
   /* footer section */
   .footer{
-      border-top: 2px solid;
+     border-top: 2px solid;
      border-image: linear-gradient(to right,#F9EBF9, #F9EBF9,#82071B,#F9EBF9,#F9EBF9) 1;
      display: flex;
      justify-content: center;
