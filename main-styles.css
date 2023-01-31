@@ -14,7 +14,7 @@ html {
   body{
       max-width: 1080px;
       margin: 0 auto;
-      padding: 0px 25px 0px 25px;
+    
   }
   
   h1,h2,p{
@@ -146,6 +146,7 @@ html {
       text-align: justify;
       padding-left: 20px;
       max-width: 500px;
+      flex-shrink: 1;
      
     }
   
@@ -162,6 +163,7 @@ html {
       max-width: 400px;
       height: auto;
       border-radius: 20%;
+      flex-shrink: 1;
     }
   
     .note{
@@ -193,12 +195,15 @@ html {
     details > p{
       padding-left: 10%;
     }
-  
+  #projects{
+    max-width: 100%;
+  }
     .container-projects{
       width:100%;
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
+
     }
   
     #dog-pc{
@@ -273,10 +278,12 @@ html {
 }
 
 @media only screen and (max-width: 550px) {
+  
+/* nav bar */
   #theme{
     display: none;
   }
-
+/* skills section */
   #skills-logo img{
     max-width: 30%;
     height:auto;
@@ -292,6 +299,17 @@ html {
 .logo{
   padding-top: 10px;
 }
+/* about me section */
+.text-container{
+  padding: 0 10px 0 10px;
+}
+/* project section */
+.container-projects{
+  padding: 0 10px 0 10px;
+}
 
+.container-skills{
+  padding: 0 10px 0 10px;
+}
 
 }
