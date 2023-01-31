@@ -11,15 +11,40 @@
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <header>
-    <!-- nav bar with links -->
+    <!-- nav bar with links desktop view-->
     <nav>
-    <div id="nav">
-        <ul role="presentation">
-            <li><a id="first-a" href="#about-me">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-             <li><a href="form.html">Contact</a></li>
-        </ul>
+        <div id="nav">
+            <ul role="presentation">
+                <li><a id="first-a" href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="form.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- nav bar with links mobile view -->
+    <nav id="nav-mobile">
+        <div class="navbar">
+            <div class="container nav-container">
+                <input class="checkbox" type="checkbox" name="" id="" />
+                <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+                <div class="nav-logo">
+                    <p id="name-navbar">Rita Zorio</p>
+                </div>
+            </div>  
+            <div class="menu-items">
+                <ul role="presentation">
+                    <li><a href="#about-me">About me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="form.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
         <!-- text for the switch -->
         <span id="theme">
             <p id="light">Light theme</p>
@@ -36,7 +61,7 @@
 <!-- body starts here-->
 <body>
     <main>
-        <h1>Rita Zorio</h1>
+        <h1 id="h1-name">Rita Zorio</h1>
 <!--about me-->       
         <section id="about-me">
             <div class="container-about-me">
