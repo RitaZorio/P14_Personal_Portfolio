@@ -179,7 +179,7 @@ html {
   /* ------------------------------------------------------- */
     /* Projects section */
     details{
-      margin: 16px 0 16px 0;
+      margin: 1rem 0 1rem 0;
     }
     details summary { 
       cursor: pointer;
@@ -274,12 +274,35 @@ html {
 
 /* ----------------------------------------- */
 /* Media Queries */
-/*mobile*/
+
 @media only screen and (max-width: 1330px) {
-  /* nav bar */
   #theme{
     display: none;
-  }
+}
+
+main{
+  padding: 0 1rem 0 1rem;
+  display: flex;
+}
+
+}
+/* --------------------------------- */
+@media only screen and (max-width: 950px) {
+.text-container{
+  max-width: 100%;
+  padding-left: 0;
+}
+#h1-name{
+  padding: 0;
+  
+}
+
+#portrait{
+  padding-top: 0.5rem;
+}
+/* -------------------------------- */
+@media only screen and (max-width: 500px) {
+
 #nav{
   display: none;
 }
@@ -294,20 +317,16 @@ html {
   top: 0;
   z-index: 1;
 }
-.nav-logo{
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  top: 0;
-  right: 10px;
-  position: fixed;
-}
+
 #name-navbar{
   color: #82071B;
-  z-index: 2; 
   font-weight: bold;
   font-size: 1.8rem;
+  position: fixed;
+  right: 0;
+  top: 0;
 }
+
 .navbar {
   width: 100%;
   box-shadow: 0 1px 4px #82071B;
@@ -321,9 +340,6 @@ html {
   height: 50px;
 }
 
-.navbar .menu-items {
-  display: flex;
-}
 
 .navbar .nav-container li {
   list-style: none;
@@ -346,14 +362,15 @@ html {
   position: relative;
   height: 60px;
 }
-
+/* ------------------------------- */
+/* hammburger menu */
 .nav-container .checkbox {
   position: absolute;
   display: block;
   height: 32px;
   width: 32px;
-  top: 20px;
-  left: 20px;
+  top: 10px;
+  left: 10px;
   z-index: 5;
   opacity: 0;
   cursor: pointer;
@@ -364,8 +381,8 @@ html {
   height: 26px;
   width: 32px;
   position: absolute;
-  top: 17px;
-  left: 20px;
+  top: 15px;
+  left: 10px;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -395,27 +412,24 @@ html {
 }
 
 .navbar .menu-items {
-  padding-top: 120px;
-  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
-  height: 100vh;
-  width: 100%;
+  background-color: #82071B;
+  height: 100%;
+  width: 60%;
   transform: translate(-150%);
   display: flex;
   flex-direction: column;
-  margin-left: -40px;
-  padding-left: 50px;
   transition: transform 0.5s ease-in-out;
-  text-align: center;
+ justify-content: flex-start;
 }
 
-.navbar .menu-items li {
-  margin-bottom: 1.2rem;
-  font-size: 1.5rem;
-  font-weight: 500;
+.navbar .menu-items a {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 
-
+/* hamburger menu transformation when clicked */
 .nav-container input[type="checkbox"]:checked ~ .menu-items {
   transform: translateX(0);
 }
@@ -432,47 +446,40 @@ html {
   transform: rotate(-45deg);
 }
 
-.nav-container input[type="checkbox"]:checked ~ .logo{
+.nav-container input[type="checkbox"]:checked ~ .nav-logo{
   display: none;
 }
 
+/* ------------------------------------- */
+/* skills section */
+#skills-logo img{
+  max-width: 30%;
+  height:auto;
 }
 
-@media only screen and (max-width: 550px) {
-  
-/* nav bar */
-  #theme{
-    display: none;
-  }
-
-
-/* skills section */
-  #skills-logo img{
-    max-width: 30%;
-    height:auto;
- }
-
- .img-container{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
+.img-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .logo{
-  padding-top: 10px;
+padding-top: 10px;
 }
+/* -------------------------------------- */
 /* about me section */
 .text-container{
-  padding: 0 10px 0 10px;
+padding: 0 10px 0 10px;
 }
+/* ------------------------------------ */
 /* project section */
 .container-projects{
-  padding: 0 10px 0 10px;
+padding: 0 10px 0 10px;
 }
 
 .container-skills{
-  padding: 0 10px 0 10px;
+padding: 0 10px 0 10px;
 }
 
 }
