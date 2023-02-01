@@ -73,12 +73,11 @@
             <form action="form-response.html" method="POST">
                 <label for="name ">Name:</label>
                 <!-- Pattern: includes uppercase and lowercase from a to z, no numbers or especial characters with a minimun of 3 letters -->
-                 <!-- <input class="input-text" value="" type="text" id="name" name="name" pattern="[A-Za-z]" title="No numbers or special characters">  -->
+                 <!-- add after name: minlength="3" pattern="[A-Za-z]" title="No numbers or special characters">  -->
                  <input class="input-text" value="" type="text" id="name" name="name">
                  <br>
                 <label for="email">E-mail:</label>
-                <!-- pattern: checks that the emails follows typical email syntax: charactersNumbersOrSimbols@characters.ch -->
-                <!-- <input class="input-text" value="" type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]\.[a-z]{2,}$" title="Example: name@email.com"> -->
+                <!--type="email" checks without a regex that the input follows classic email sintaxis: name@domain.com -->
                 <input class="input-text" value="" type="email" id="email" name="email">
                 <br>
                 <label for="comment">Enter your message below:</label>
