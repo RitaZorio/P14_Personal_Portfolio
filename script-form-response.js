@@ -1,17 +1,25 @@
 
-//Go-back butto takes you to index.html
+//Go-back button takes you to index.html
 //selecting the button
 
 
-/*No funciona: 
+//sale null???
 let button = document.getElementById('go-back');
-*/
-let button = document.getElementsByClassName('go-back');
 
-const changeColor = () =>{
-    button.style.backgroundColor= 'blue';
-
+const changeName = () =>{
+    button.innerHTML = "CHANGED";
 }
 
-button.onclick = changeColor;
 
+button.addEventListener('click', changeName);
+button.onclick = changeName(); 
+
+//-------------
+
+let myBtn = document.getElementsByClassName('go-back');
+
+const itWorked = () =>{
+    alert ('It Worked!');
+}
+
+myBtn.addEventListener('click', itWorked)

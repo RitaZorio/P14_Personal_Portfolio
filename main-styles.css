@@ -309,6 +309,7 @@ main{
 }
 #h1-name{
   display: none;
+  float: right;
  }
 
 #nav-mobile{
