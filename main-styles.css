@@ -295,6 +295,8 @@ main{
 }
 #h1-name{
   padding: 0;
+  width: 100%;
+  text-align: center;
   
 }
 
@@ -324,9 +326,10 @@ main{
   color: #82071B;
   font-weight: bold;
   font-size: 1.8rem;
-  position: fixed;
-  right: 0;
-  top: 0;
+  margin: 0;
+  line-height: 60px;
+  padding-right: 8px;
+  text-align: right
 }
 
 .navbar {
@@ -415,13 +418,15 @@ main{
 
 .navbar .menu-items {
   background-color: #82071B;
-  height: 100%;
+  height: 100vh;
   width: 60%;
   transform: translate(-150%);
   display: flex;
   flex-direction: column;
   transition: transform 0.5s ease-in-out;
  justify-content: flex-start;
+ position: absolute;
+ top:0;
 }
 
 .navbar .menu-items a {
@@ -484,4 +489,5 @@ padding: 0 10px 0 10px;
 padding: 0 10px 0 10px;
 }
 
+}
 }
