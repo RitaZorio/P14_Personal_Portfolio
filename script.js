@@ -1,14 +1,13 @@
-// Mobile nav bar recedes after clicking on a link
-//selecting the correct <a>s 
-let navLink = document.getElementsByClassName('navlink');
+// Mobile nav bar recedes after clicking on a link:
+//selecting the <a>s that are inside the ul with id link-list.
+//This refers to an array because there are 4 <a> links.
+const navLinks = document.querySelectorAll('#link-list a');
 //selecting hamburger menu checkbox
-let checkbox = document.querySelector('checkbox');
+const checkbox = document.getElementById('hamburger-button');
 //un-checking the checkbox
-let unCheck = ()=>{
+const unCheck = ()=>{
     checkbox.checked = false;
 }
-//adding the eventListener
-//Esta opcion da error: addEventListener no es una funcion
-navLink.addEventListener('click', unCheck);
-//Esta no da error pero no funciona
-navLink.onclick = unCheck;
+//Adding the eventListener. Since it's an array, we have to iterate
+//the array and add an eventListener to each <a>:
+ navLinks.forEach(navLink => navLink.addEventListener('click', unCheck));
